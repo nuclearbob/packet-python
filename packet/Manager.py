@@ -190,7 +190,7 @@ class Manager(BaseAPI):
         return Device(data, self)
 
     def get_device(self, device_id):
-        data = self.call_api("devices/%s" % device_id)
+        data = self.call_api("hardware/%s" % device_id)
         return Device(data, self)
 
     def list_ssh_keys(self, params={}):
